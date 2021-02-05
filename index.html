@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="image\Logo 3D.png">
+    <title>
+        3D Art Langkawi
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        @media only screen and (max-width:800px)
+        {
+            /* For tablets: */
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+            .right {
+                width: 100%;
+            }
+            }
+            @media only screen and (max-width:500px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <div class="logo"><img src="image\Logo 3D.png" alt="Logo3D" width="90px"></div>
+        
+    <div class="menu-bar">
+        <ul>
+            <li><a href="aboutme.html">Home</a></li>
+            <li><a href="index.html">3D Art In Paradise</a></li>
+            <li><a href="#">Promotion</a>
+                <div class="sub-menu-promotion">
+                    <ul>
+                        <li><a href="mco.html">Movement Control Order</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="aboutUs.html">About Us</a>
+                <div class="sub-menu-promotion">
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <header><img src="image\banner1.png" alt="Banner" width="100%"></header><br>
+
+    <article align=center>
+        <table border="0" cellpadding="12px" celspacing="12px" width="100%">
+
+            <tr>
+                <td width=50% align="center">
+                    <div class="container">
+                        <h2 style="padding-left: 1%;">History of Langkawi</h2>
+                        <p style="padding-left: 4%; padding-right: 4%; text-justify: inter-word; font-size: 18px;">Langkawi is an island of legends. Its name is believed to have originated from the abundance
+                            of eagles on the island: helang (eagle in Malay) and kawi (marble in Sanskrit), begets the moniker helang-kawi which was eventually toned down to Langkawi. The main
+                            settlement of locals is in Kuah, a dusty town noticeably beloved for its array of duty-free stores and Chinese seafood restaurants. Other popular areas include the
+                            Pantai Cenang and Pantai Tengah stretch, the quite strips of Pantai Kok and Padang Matsirat and the exclusive beaches of Datai Bay and Tanjung Rhu. No matter where
+                            you go on Langkawi you will find that myths and legends permeate its culture and history, so read up on them and familiarise yourself with the island’s most popular stories</p><br>
+            
+                        <h2 style="padding-left: 1%;">3D Art in Paradise</h2>
+                        <p style="padding-left: 4%; padding-right: 4%; text-justify: inter-word; font-size: 18px;">Art in Paradise is located next to the cable car in Langkawi’s premier tourist destination, Oriental Village.
+                            You can visit Oriental Village in Langkawi’s Northeast, just past Telaga Harbour (about 15 minutes North of the airport). If you don’t have your own transport, you can easily
+                            get here by taxi or bus, though there is no public transportation at this time.</p><br>
+                        
+                        <h2 style="padding-left: 1%;">Nearby Places</h2>
+                        <p style="padding-left: 4%; padding-right: 4%; text-justify: inter-word; font-size: 18px;">We’re surrounded by over 50 restaurants, shops, and adventure outlets at Oriental Village alone! We’re also
+                            close to a stunning beach, the oldest land formation in SE Asia, and Langkawi’s most famous waterfall. You might visit a few places while you’re here!</p><br>
+                    </div>
+                </td>
+                <td width=50% align="center">
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 5</div>
+                          <img src="image\pic1.png" style="width:100%" alt=slide1>
+                          <div class="text">Kilim Geoforest Park</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 5</div>
+                          <img src="image\pic2.png" style="width:100%" alt=slide2>
+                          <div class="text">Sky Cab</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 5</div>
+                          <img src="image\pic3.png" style="width:100%" alt=slide3>
+                          <div class="text">Pantai Cenang</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="image\pic4.png" style="width:100%" alt=slide4>
+                            <div class="text">3D Art in Paradise</div>
+                        </div>
+                
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="image\pic5.png" style="width:100%" alt=slide4>
+                            <div class="text">Sky Cab</div>
+                        </div>
+                
+                    </div>
+                    <br>
+                        
+                    <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </td>
+            </tr>
+          
+        </table>
+    </article>
+    <br>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+</body>
+
+<footer class="footer">
+    <section>
+        <div class="col">
+            <h2>SOCIAL MEDIA</h2><br><br><br>
+            <ul>
+                <li><a href="https://www.facebook.com/aiplangkawi">Facebook</a></li>
+                <li><a href="mailto:admin@3dlangkawi.com.my">Email</a></li>
+                <li><a href="https://wa.me/60135091209">Whatsapp</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h2>QUICK LINK</h2>
+            <ul>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="mco.html">Movement Control Order</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h2>INFORMATION</h2>
+            <ul>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="howToBooking.html">How to booking?</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-footer">
+        <p class="copyright">
+            <sub>
+                Copyright © 2021 | 3D Art In Paradise<br>
+                Recommended browser viewed through Chrome 8.7 or higher.<br>
+                This website is best viewed at screen resolution of 1366 x 768 pixels or higher.<br>
+                All Rights Reserved.
+            </sub>
+        </p>
+    </section>
+</footer>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="image\Logo 3D.png">
+    <title>
+        3D Art Langkawi
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtUOpiSPWANRXdMhwpIaO8sf2vSJgkJFI&callback=initMap" async defer></script>
+    <script type="text/javascript">
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('show_maps'), {
+              center: {lat: -1.035721, lng: 118.436931},
+              zoom: 5
+            });
+        }
+    </script>
+
+
+    <style>
+        @media only screen and (max-width:800px)
+        {
+            /* For tablets: */
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+            .right {
+                width: 100%;
+            }
+            }
+            @media only screen and (max-width:500px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+                width: 100%;
+            }
+        }
+
+        .card{
+            box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+            background: rgb(159, 189, 237);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .title {
+            color: black;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .social-media {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+
+        button:hover, a:hover {
+            opacity: 0.7;
+        }
+
+        /* Form Feedback */
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 10px;
+            background-color: rgb(159, 189, 237);
+            padding: 20px;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo"><img src="image\Logo 3D.png" alt="Logo3D" width="90px"></div>
+        
+    <div class="menu-bar">
+        <ul>
+            <li><a href="aboutme.html">Home</a></li>
+            <li><a href="index.html">3D Art In Paradise</a></li>
+            <li><a href="#">Promotion</a>
+                <div class="sub-menu-promotion">
+                    <ul>
+                        <li><a href="mco.html">Movement Control Order</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="aboutUs.html">About Us</a>
+                <div class="sub-menu-promotion">
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <header><img src="image\banner1.png" alt="Banner" width="100%"></header><br>
+    <h1 class="title-main">Contact Us</h1><br>
+    
+    <article align=center>
+        <table border="0" cellpadding="12px" celspacing="12px" width="100%">
+
+            <tr>
+                <td width=33.33% align="center">
+                    <div class="card">
+                        <img class="logo-card" src="image\Logo 3D.jpg" alt="Contact Image" style="width:100%">
+                        <p class="title"><h3>3D Art in Paradise Langkawi</h3></p>
+                        <p class="title">Jalan Telaga Tujuh, 07100</p>
+                        <p class="title">Langkawi, Kedah</p>
+                        <div style="margin: 24px 0;">
+                            <a class="social-media" href="mailto:admin@3dlangkawi.com.my"><i class="fa fa-envelope"></i></a> 
+                            <a href="https://wa.me/60135091209"><i class="fa fa-whatsapp"></i></a>  
+                            <a href="https://www.facebook.com/aiplangkawi"><i class="fa fa-facebook"></i></a>  
+                        </div>
+                        <p class="title"><button type="button" onclick="window.location.href='https://g.page/3d-art-in-paradise-langkawi?share';">Maps</button></p>
+                    </div>
+                </td>
+                <td width=33.33% align="center">
+                    <div class="container">
+                        <form action="contact.html">
+                            <h2>FEEDBACK FORM</h2><br>
+                        <label for="user-name">Name</label>
+                        <input type="text" id="user-name" name="name" placeholder="Name">
+                    
+                        <label for="user-email">Email</label>
+                        <input type="text" id="user-email" name="email" placeholder="testemail@gmail.com">
+                    
+                        <label for="user-message">Message</label>
+                        <textarea id="user-message" name="message" placeholder="Message" style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit" onClick="submitBtn()">
+                        </form>
+                    </div>
+                </td>
+                <td width=33.33% align="center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.170988534216!2d99.6696747142662!3d6.371913226675987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304c76e48d7ce8d1%3A0xdd6a71bad3e6c61c!2s3D%20Art%20in%20Paradise%20Langkawi!5e0!3m2!1sen!2smy!4v1612525739809!5m2!1sen!2smy"
+                        width="100%" height="450px" style="border:0; padding-left: 2%; padding-right: 2%;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </td>
+            </tr>
+          
+        </table>
+    </article>
+    <br>
+
+    <script>
+        function submitBtn() {
+            alert("Thank you for your feedback !")
+        }
+    </script>
+</body>
+
+<footer class="footer">
+    <section>
+        <div class="col">
+            <h2>SOCIAL MEDIA</h2><br><br><br>
+            <ul>
+                <li><a href="https://www.facebook.com/aiplangkawi">Facebook</a></li>
+                <li><a href="mailto:admin@3dlangkawi.com.my">Email</a></li>
+                <li><a href="https://wa.me/60135091209">Whatsapp</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h2>QUICK LINK</h2>
+            <ul>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="mco.html">Movement Control Order</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h2>INFORMATION</h2>
+            <ul>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="howToBooking.html">How to booking?</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-footer">
+        <p class="copyright">
+            <sub>
+                Copyright © 2021 | 3D Art In Paradise<br>
+                Recommended browser viewed through Chrome 8.7 or higher.<br>
+                This website is best viewed at screen resolution of 1366 x 768 pixels or higher.<br>
+                All Rights Reserved.
+            </sub>
+        </p>
+    </section>
+</footer>
+</html>
