@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="Logo 3D.png">
+    <title>
+        3D Art Langkawi
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        @media only screen and (max-width:800px)
+        {
+            /* For tablets: */
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+            .right {
+                width: 100%;
+            }
+            }
+            @media only screen and (max-width:500px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+                width: 100%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+        body {
+            background: #fbfbfb;
+            /* background: -webkit-linear-gradient(bottom, rgb(57, 83, 124), rgb(169, 203, 255)); */
+            background-repeat: no-repeat;
+        }
+        label {
+            font-weight: bold;
+            font-size: 11pt;
+        }
+        #card {
+            background: rgb(159, 189, 237);
+            border-radius: 8px;
+            box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+            height: 500px;
+            margin: 6rem auto 8.1rem auto;
+            width: 400px;
+        }
+        #card-content {
+            padding: 12px 44px;
+        }
+        #card-title {
+            letter-spacing: 4px;
+            padding-bottom: 23px;
+            padding-top: 13px;
+            text-align: center;
+        }
+        #signup {
+            color: #2dbd6e;
+            font-size: 10pt;
+            margin-top: 16px;
+            text-align: center;
+        }
+        #submit-btn {
+            background: -webkit-linear-gradient(right, rgb(104, 165, 255), rgb(12, 46, 97));
+            border: none;
+            border-radius: 21px;
+            box-shadow: 0px 1px 8px rgb(11, 162, 196);
+            cursor: pointer;
+            color: white;
+            height: 42.3px;
+            margin: 0 auto;
+            margin-top: 20px;
+            transition: 0.25s;
+            font-weight: bold;
+            width: 153px;
+        }
+        #submit-btn:hover {
+            box-shadow: 0px 1px 18px #2f00ff;
+        }
+        .form {
+            align-items: left;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-border {
+            background: -webkit-linear-gradient(right, rgb(12, 46, 97), rgb(104, 165, 255));
+            height: 1px;
+            width: 100%;
+        }
+        .form-content {
+            background: rgb(159, 189, 237);
+            border: none;
+            outline: none;
+            padding-top: 14px;
+        }
+        .underline-title {
+            background: -webkit-linear-gradient(bottom, rgb(12, 46, 97), rgb(104, 165, 255));
+            height: 3px;
+            margin: 1.0rem auto 0 auto;
+            width: 95px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo"><img src="Logo 3D.png" alt="Logo3D" width="90px"></div>
+        
+    <div class="menu-bar">
+        <ul>
+            <li><a href="aboutme.html">Home</a></li>
+            <li><a href="index.html">3D Art In Paradise</a></li>
+            <li><a href="#">Promotion</a>
+                <div class="sub-menu-promotion">
+                    <ul>
+                        <li><a href="mco.html">Movement Control Order</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="aboutUs.html">About Us</a>
+                <div class="sub-menu-promotion">
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <header><img src="image\banner1.png" alt="Banner" width="100%"></header><br>
+    <h1 class="title-main">Booking</h1><br>
+
+    <div id="card">
+        <div id="card-content">
+            <div id="card-title">
+                <h2>BOOKING FORM</h2>
+                <div class="underline-title"></div>
+            </div>
+
+            <form action="" method="post" class="form">
+                <label for="user-email" style="padding-top:13px">
+                    &nbsp;Name
+                </label>
+                <input id="user-email" class="form-content" type="text" name="name" maxlength="100" placeholder="Name" required />
+                <div class="form-border"></div>
+
+                <label for="user-email" style="padding-top:13px">
+                    &nbsp;Email
+                </label>
+                <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" placeholder="testemail@gmail.com" required />
+                <div class="form-border"></div>
+
+                <label for="user-password" style="padding-top:22px">
+                    &nbsp;Password
+                </label>
+                <input id="user-password" class="form-content" type="password" name="password" placeholder="password" required />
+                <div class="form-border"></div>
+
+                <label for="user-email" style="padding-top:13px">
+                    &nbsp;Telephone
+                </label>
+                <input id="user-email" class="form-content" type="tel" name="telephone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="12" placeholder="01234567890" required />
+                <div class="form-border"></div>
+
+                <label for="user-password" style="padding-top:22px">
+                    &nbsp;Date
+                </label>
+                <input id="user-password" class="form-content" type="date" name="date" required />
+                <div class="form-border"></div>
+
+                <input id="submit-btn" type="submit" name="submit" value="BOOKING" onClick="submitBtn()"/>
+            </form>
+        </div>
+    </div>
+      
+        <script>
+            function submitBtn() {
+                alert("Your reservation is confirmed !")
+            }
+        </script>
+</body>
+
+<footer class="footer">
+    <section>
+        <div class="col">
+            <h2>SOCIAL MEDIA</h2><br><br><br>
+            <ul>
+                <li><a href="https://www.facebook.com/aiplangkawi">Facebook</a></li>
+                <li><a href="mailto:admin@3dlangkawi.com.my">Email</a></li>
+                <li><a href="https://wa.me/60135091209">Whatsapp</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h2>QUICK LINK</h2>
+            <ul>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="mco.html">Movement Control Order</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h2>INFORMATION</h2>
+            <ul>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="howToBooking.html">How to booking?</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-footer">
+        <p class="copyright">
+            <sub>
+                Copyright © 2021 | 3D Art In Paradise<br>
+                Recommended browser viewed through Chrome 8.7 or higher.<br>
+                This website is best viewed at screen resolution of 1366 x 768 pixels or higher.<br>
+                All Rights Reserved.
+            </sub>
+        </p>
+    </section>
+</footer>
+</html>
