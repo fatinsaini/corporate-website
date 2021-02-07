@@ -49,6 +49,7 @@
             margin: auto;
             text-align: center;
             padding: 15px;
+            padding-left: 2px;
             border-radius: 10px;
         }
 
@@ -58,7 +59,7 @@
             margin: 10px;
         }
 
-        button {
+        .buttonMaps {
             border: none;
             outline: 0;
             display: inline-block;
@@ -83,7 +84,7 @@
 
         /* Form Feedback */
 
-/*         input[type=text], select, textarea {
+        /* input[type=text], select, textarea {
             width: 100%;
             padding: 12px;
             border: 1px solid #ccc;
@@ -112,8 +113,8 @@
             background-color: rgb(159, 189, 237);
             padding: 20px;
             width: 80%;
-        } */
-    </style>
+        }*/
+    </style> 
 </head>
 
 <body>
@@ -146,6 +147,8 @@
     <h1 class="title-main">Contact Us</h1><br>
     
     <article align=center>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+
         <table border="0" cellpadding="12px" celspacing="12px" width="100%">
 
             <tr>
@@ -160,11 +163,11 @@
                             <a href="https://wa.me/60135091209"><i class="fa fa-whatsapp"></i></a>  
                             <a href="https://www.facebook.com/aiplangkawi"><i class="fa fa-facebook"></i></a>  
                         </div>
-                        <p class="title"><button type="button" onclick="window.location.href='https://g.page/3d-art-in-paradise-langkawi?share';">Maps</button></p>
+                        <p class="title"><button class="buttonMaps" type="button" onclick="window.location.href='https://g.page/3d-art-in-paradise-langkawi?share';">Maps</button></p>
                     </div>
                 </td>
                 <td width=37.50% align="center">
-<!--                     <div class="container">
+                    <!-- <div class="container">
                         <form action="contact.html">
                             <h2>FEEDBACK FORM</h2><br>
                         <label for="user-name">Name</label>
@@ -194,11 +197,31 @@
     </article>
     <br>
 
-<!--     <script>
+    <script>
         function submitBtn() {
             alert("Thank you for your feedback !")
         }
-    </script> -->
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            } else {
+            mybutton.style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 <footer class="footer">
