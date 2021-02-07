@@ -8,9 +8,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
         @media only screen and (max-width:800px)
@@ -31,7 +30,7 @@
             }
         }
 
-/*         a {
+        a {
             text-decoration: none;
         }
         body {
@@ -104,13 +103,13 @@
             height: 3px;
             margin: 1.0rem auto 0 auto;
             width: 95px;
-        } */
+        }
     </style>
 </head>
 
 <body>
     <div class="logo"><img src="Logo 3D.png" alt="Logo3D" width="90px"></div>
-        
+    
     <div class="menu-bar">
         <ul>
             <li><a href="aboutme.html">Home</a></li>
@@ -136,8 +135,9 @@
 
     <header><img src="banner1.png" alt="Banner" width="100%"></header><br>
     <h1 class="title-main">Booking</h1><br>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
 
-        <!-- <div id="card">
+    <!-- <div id="card">
         <div id="card-content">
             <div id="card-title">
                 <h2>BOOKING FORM</h2>
@@ -195,11 +195,31 @@
             </table>
         </article>
 
-        <!-- <script>
+        <script>
             function submitBtn() {
                 alert("Your reservation is confirmed !")
             }
-        </script> -->
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            } else {
+            mybutton.style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 
 <footer class="footer">
